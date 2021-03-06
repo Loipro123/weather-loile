@@ -5,11 +5,11 @@ const hbs = require('hbs');
 const path = require('path');
 const app = express();
 
-const port = process.env.PORT ;
+const port = process.env.PORT || 3000;
 
 const pathViews = path.join(__dirname, '../template/views');
-const pathHbs = path.join(__dirname,'../template/partials')
-const pathName =path.join(__dirname,'../public')
+const pathHbs = path.join(__dirname,'../template/partials');
+const pathName =path.join(__dirname,'../public');
 
 hbs.registerPartials(pathHbs)
 app.use(express.static(pathName))
