@@ -1,0 +1,26 @@
+{
+  "name": "project-setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "env-cmd -f ./config/dev.env nodemon src/index.js -e js,hbs",
+    "compile:sass": "node-sass public/sass/main.scss public/css/main.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "hbs": "^4.0.6",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.12",
+    "request": "^2.88.0",
+    "validator": "^12.1.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.0.1",
+    "node-sass": "^4.13.0",
+    "nodemon": "^2.0.0"
+  }
+}

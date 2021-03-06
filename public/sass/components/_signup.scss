@@ -1,0 +1,71 @@
+.signup {
+    @include alignCenter;
+    background-color: rgba($color-white, .5);
+    padding: 2rem 5rem 4rem 5rem;
+    width: 35%;
+    top: 50%;
+    animation: moveinTopPosition 2s ease-in-out;
+    &__box {
+        @include clearFix;
+        margin-bottom: 1rem;
+    }
+    &__form {
+        margin-top: 3rem;
+        text-align: center;
+    }
+    &__text {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    &__name {
+        display: inline-block;
+        width: 44.5%;
+        margin-left: 3rem;
+    }
+    &__name:not(:last-child) {
+        margin-left: 0rem;
+    }
+
+    &__input {
+        width: 98%;
+    }
+
+    &__label {
+        float: left;
+        margin-left: .7rem;
+        margin-top: .7rem;
+        font-size: 1.8rem;
+        transition: all 1s ease-in-out;
+    }
+    &__input {
+        border: none;
+        font-size: 1.7rem;
+        font-weight: 400;
+        border-bottom: 2px solid rgb(145, 136, 109);
+        background-color: transparent;
+        padding: 2px 5px;
+        font-size: 1.8rem;
+        font-family: 'Dancing Script', cursive;
+        &:focus {
+            outline: none;
+        }
+        &:focus:invalid {
+            border-bottom: 2px solid $color-secondary-dark;
+        }
+    }
+    &__btn {
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        border: 3px solid rgba(148, 144, 132,.5);
+    }
+    &__submit {
+        margin-top: 2rem;
+    }
+    &__input:placeholder-shown  +&__label{
+        opacity: 0;
+        visibility: hidden;
+        transform: translate(1rem, -4rem);
+    }
+}

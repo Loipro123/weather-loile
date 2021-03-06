@@ -1,0 +1,15 @@
+.background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .8;
+    overflow: hidden;
+    z-index: -1;
+    &__video {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+}

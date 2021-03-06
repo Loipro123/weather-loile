@@ -1,0 +1,44 @@
+.navigation {
+    background-color: black;
+    overflow: hidden;
+    
+    @include clearFix;
+    &__left {
+        float: left;
+        text-align: center;
+    }
+    &__right {
+        float: right;
+        font-family: 'Dancing Script', cursive;
+    }
+    &__list {
+        list-style-type: none;
+    }
+    &__item {
+        display: inline-block;
+        padding: 3rem;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+    }
+    &__link {
+        text-decoration: none;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        transition: all .5s ease-in-out;
+        color: white !important;
+        
+    }
+    &__icon {
+        font-size: 4.75rem;
+        color: rgba( $color-yellow, .8);
+        margin: 1rem 3rem;
+        animation: moveinLeft 1.5s ease-in-out;
+    }
+    &__item:hover {
+        transform: scale(1.4);
+    }
+}
+.nav-item{
+    padding: 10px;
+    font-family: 'Dancing Script', cursive;
+}

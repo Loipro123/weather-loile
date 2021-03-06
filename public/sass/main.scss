@@ -1,0 +1,47 @@
+
+ // when export project don't export node_modules when client download the  project  they will install type install npm.
+// we have to import varibales first to use in other founder
+ @import "abstract/variables";
+ @import "abstract/functions";
+ @import "abstract/mixins";
+
+
+ @import "base/base";
+ @import "base/animations";
+ @import "base/typography";
+ @import "base/untilities";
+
+ 
+
+ @import "pages/home";
+
+ @import "layout/header";
+ @import "layout/grid";
+
+
+ @import "components/button";
+ @import "components/bg-video";
+ @import "components/composition";
+ @import "components/feature-box";
+ @import "components/card";
+ @import "components/story";
+ @import "components/navigation";
+ @import "components/form";
+ @import "components/weather";
+ @import "components/loading";
+ @import "components/about";
+ @import "components/signup";
+
+
+
+
+/* the easiest way of center anything is transfrom, top, left*/
+
+
+
+/* create animation for header*/
+
+
+
+/*********/
+

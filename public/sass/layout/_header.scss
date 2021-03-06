@@ -1,0 +1,29 @@
+.header {
+    height: 95vh; /* height 95 % of the view height*/
+    background-image:linear-gradient(to right, rgba($color-primary-ligh,0.9),rgba($color-primary-dark,0.8) ) ,url('../img/hero.jpg'); /* add to background- image */
+    background-size: cover; /* what ever the with the image will cover the element*/
+    background-position: top; /* what ever the weith change the top image always stay at the top of element*/
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    position: relative;
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+    &__logo {
+        height: 3rem;
+    }
+    
+    
+    
+    /* making header text center*/
+    
+    &__headering-text {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+}

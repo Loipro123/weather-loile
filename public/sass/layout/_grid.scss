@@ -1,0 +1,39 @@
+.row {
+    max-width: $width-row-grid;
+    margin:0 auto;
+    &:not(:last-child) {
+        margin-bottom: $marginBottom-row-grid;
+    }
+    @include clearFix;
+}
+
+[class^='col-'] {
+    float: left;
+    &:not(:last-child) {
+        margin-right: $marginRight-col-grid;
+    }
+}
+
+.col-1-out-of-2 {
+    width: calc((100% - #{$marginRight-col-grid}) / 2);
+}
+
+.col-1-out-of-3 {
+    width: calc((100% - 2 * #{$marginRight-col-grid}) / 3);
+}
+
+.col-2-out-of-3 {
+    width: calc(2 * ((100% - 2 * #{$marginRight-col-grid}) / 3) + #{$marginRight-col-grid});
+}
+
+.col-1-out-of-4 {
+    width: calc((100% - 3 * #{$marginRight-col-grid}) / 4);
+}
+
+.col-2-out-of-4 {
+    width: calc(2 * ((100% - 3 * #{$marginRight-col-grid}) / 4) + #{$marginRight-col-grid});
+}
+
+.col-3-out-of-4 {
+    width: calc(3 * ((100% - 3 * #{$marginRight-col-grid}) / 4) + 2 * #{$marginRight-col-grid});
+}
